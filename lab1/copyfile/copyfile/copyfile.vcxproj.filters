@@ -31,10 +31,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Admin\source\repos\copyfile\copyfile\.clang-format" />
     <None Include="test.bat">
       <Filter>Исходные файлы</Filter>
     </None>
+    <None Include=".clang-format" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="empty.txt">

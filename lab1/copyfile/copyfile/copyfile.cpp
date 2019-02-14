@@ -9,72 +9,42 @@ int main(int argc, char* argv[])
 {
 	if (argc != 3)
 	{
-		cout << "Invalid arguments count\n"
-			<< "Usage: copyfile.exe <input file> <output file>\n";
+		cout << "Invalid arguments count" << endl
+			 << "Usage: copyfile.exe <input file> <output file>" << endl;
 		return 1;
 	}
 
-	ifstream Fin(argv[1]);
+	ifstream inputFile(argv[1]);
 
-	if (!Fin.is_open())
+	if (!inputFile.is_open())
 	{
-		cout << "Failed to open " << argv[1] << " for reading\n";
+		cout << "Failed to open " << argv[1] << " for reading" << endl;
 		return 1;
 	}
 
-	ofstream Fout(argv[2]);
-	if (!Fout.is_open())
+	ofstream outputFile(argv[2]);
+	if (!outputFile.is_open())
 	{
-		cout << "Failed to open " << argv[2] << " for writing\n";
+		cout << "Failed to open " << argv[2] << " for writing" << endl;
 		return 1;
 	}
 
-	char ch;
+	string line;
 
-	while (!Fin.eof())
+	while (!inputFile.eof())
 	{
-		if (Fin.get(ch))
+		if (getline(inputFile, line))
 		{
-			if (!Fout.put(ch))
-			{
-				cout << "Failed to save data on disk\n";
-				return 1;
-			}
+			outputFile << line << endl;
+		}
+		else
+		{
+			cout << "Failed to read data from file" << endl;
 		}
 	}
+
+	inputFile.close();
+	outputFile.close();
 
 	return 0;
 }
-
-/*
-int main(int argc, char* argv[])
-{
-	ifstream Fin;
-	Fin.open(argv[1], ios_base::in);
-	ofstream Fout;
-	Fout.open(argv[2], ios_base::out);
-
-	if (Fin.is_open())
-	{
-		while (!Fin.eof())
-		{
-			string str;
-			//getline(Fin, str);
-			if (!getline(Fin, str))
-			{
-				cout << "Failed to read a line from file" << endl;
-			}
-			else
-			{
-				Fout << str << endl;
-			}
-		}
-	}
-	else
-	{
-		cout << "Failed to open text.txt for writing" << endl;
-	}
-	Fin.close();
-	Fout.close();
-}
-*/
