@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab2_vector", "lab2_vector\lab2_vector.vcxproj", "{3CA58FD3-4952-49C1-B0EE-35554FF0760B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		UnitTest|x64 = UnitTest|x64
+		UnitTest|x86 = UnitTest|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Debug|x64.ActiveCfg = Debug|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Debug|x64.Build.0 = Debug|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Debug|x86.ActiveCfg = Debug|Win32
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Debug|x86.Build.0 = Debug|Win32
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Release|x64.ActiveCfg = Release|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Release|x64.Build.0 = Release|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Release|x86.ActiveCfg = Release|Win32
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.Release|x86.Build.0 = Release|Win32
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.UnitTest|x64.ActiveCfg = UnitTest|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.UnitTest|x64.Build.0 = UnitTest|x64
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.UnitTest|x86.ActiveCfg = UnitTest|Win32
+		{3CA58FD3-4952-49C1-B0EE-35554FF0760B}.UnitTest|x86.Build.0 = UnitTest|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE86427-B8ED-4294-968D-49DD6BD13328}
+	EndGlobalSection
+EndGlobal
